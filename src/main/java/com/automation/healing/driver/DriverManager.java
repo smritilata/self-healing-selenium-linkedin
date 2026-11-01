@@ -51,7 +51,17 @@ public class DriverManager {
                 if (headless) {
                     options.addArguments("--headless=new");
                 }
-                options.addArguments("--start-maximized", "--window-size=1920,1080");
+                options.addArguments(
+                        "--start-maximized",
+                        "--window-size=1920,1080",
+                        "--disable-gpu",
+                        "--no-sandbox",
+                        "--disable-dev-shm-usage",
+                        "--disable-blink-features=AutomationControlled",
+                        "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0"
+                );
+                options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
+                options.setExperimentalOption("useAutomationExtension", false);
                 driver = new EdgeDriver(options);
             }
             case "chrome" -> {
