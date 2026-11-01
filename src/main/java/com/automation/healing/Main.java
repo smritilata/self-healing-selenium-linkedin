@@ -87,6 +87,12 @@ public class Main {
             System.out.println("  " + reportPath);
             System.out.println("===============================================================================");
 
+            if (reportPath != null) {
+                try {
+                    new ProcessBuilder("cmd", "/c", "start", "", reportPath).start();
+                } catch (Exception ignored) {}
+            }
+
         } catch (Exception e) {
             logger.error("Error occurred during execution: ", e);
         } finally {

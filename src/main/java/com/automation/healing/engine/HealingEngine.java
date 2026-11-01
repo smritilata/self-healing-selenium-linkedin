@@ -6,6 +6,7 @@ import com.automation.healing.report.HealingReportManager;
 import com.automation.healing.repository.LocatorRepository;
 import com.automation.healing.util.ConfigLoader;
 import com.automation.healing.util.SimilarityUtils;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -82,7 +83,7 @@ public class HealingEngine {
                         "No candidate element met the similarity threshold (>= %.2f).",
                 elementKey, brokenBy, similarityThreshold);
         logger.error(msg);
-        throw new NoSuchElementException(msg, originalException);
+        throw new org.openqa.selenium.NoSuchElementException(msg, originalException);
     }
 
     private WebElement tryFallbackLocators(WebDriver driver, LocatorProfile profile) {
