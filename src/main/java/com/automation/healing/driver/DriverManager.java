@@ -37,7 +37,11 @@ public class DriverManager {
 
         switch (browser) {
             case "firefox" -> {
-                WebDriverManager.firefoxdriver().setup();
+                try {
+                    WebDriverManager.firefoxdriver().setup();
+                } catch (Exception e) {
+                    logger.warn("WebDriverManager skipped, using Selenium 4 native driver management: {}", e.getMessage());
+                }
                 FirefoxOptions options = new FirefoxOptions();
                 if (headless) {
                     options.addArguments("-headless");
@@ -46,7 +50,11 @@ public class DriverManager {
                 driver = new FirefoxDriver(options);
             }
             case "edge" -> {
-                WebDriverManager.edgedriver().setup();
+                try {
+                    WebDriverManager.edgedriver().setup();
+                } catch (Exception e) {
+                    logger.warn("WebDriverManager skipped, using Selenium 4 native driver management: {}", e.getMessage());
+                }
                 EdgeOptions options = new EdgeOptions();
                 if (headless) {
                     options.addArguments("--headless=new");
@@ -65,7 +73,11 @@ public class DriverManager {
                 driver = new EdgeDriver(options);
             }
             case "chrome" -> {
-                WebDriverManager.chromedriver().setup();
+                try {
+                    WebDriverManager.chromedriver().setup();
+                } catch (Exception e) {
+                    logger.warn("WebDriverManager skipped, using Selenium 4 native driver management: {}", e.getMessage());
+                }
                 ChromeOptions options = new ChromeOptions();
                 if (headless) {
                     options.addArguments("--headless=new");
