@@ -1,0 +1,176 @@
+{
+  "linkedin.keywords_input": {
+    "key": "linkedin.keywords_input",
+    "primaryLocatorType": "css",
+    "primaryLocatorValue": "input[name='keywords']",
+    "lastKnownWorkingLocator": "input[name='keywords']",
+    "fallbackLocators": [
+      "input[aria-label*='Search by title']",
+      "input#job-search-bar-keywords",
+      "input.keywords-typeahead-input",
+      "//input[@name='keywords' or contains(@placeholder, 'job') or contains(@placeholder, 'Title')]",
+      "input[type='search'][placeholder*='job']"
+    ],
+    "fingerprint": {
+      "tag": "input",
+      "name": "keywords",
+      "type": "search",
+      "placeholder": "Search job titles or companies",
+      "aria-label": "Search by title, skill, or company",
+      "role": "combobox"
+    },
+    "healCount": 0
+  },
+  "linkedin.location_input": {
+    "key": "linkedin.location_input",
+    "primaryLocatorType": "css",
+    "primaryLocatorValue": "input[name='location']",
+    "lastKnownWorkingLocator": "input[name='location']",
+    "fallbackLocators": [
+      "input[aria-label*='City, state, or zip code']",
+      "input#job-search-bar-location",
+      "input.location-typeahead-input",
+      "//input[@name='location' or contains(@placeholder, 'City') or contains(@aria-label, 'location')]",
+      "input[type='search'][placeholder*='City']"
+    ],
+    "fingerprint": {
+      "tag": "input",
+      "name": "location",
+      "type": "search",
+      "placeholder": "City, state, or zip code",
+      "aria-label": "City, state, or zip code"
+    },
+    "healCount": 0
+  },
+  "linkedin.search_button": {
+    "key": "linkedin.search_button",
+    "primaryLocatorType": "css",
+    "primaryLocatorValue": "button[data-tracking-control-name='public_jobs_jobs-search-box_search-submit']",
+    "lastKnownWorkingLocator": "button[data-tracking-control-name='public_jobs_jobs-search-box_search-submit']",
+    "fallbackLocators": [
+      "button.base-search-bar__submit-btn",
+      "button[type='submit'][aria-label*='Search']",
+      "//button[@type='submit' and (contains(., 'Search') or contains(@aria-label, 'Search'))]",
+      "form.jobs-search-box button[type='submit']"
+    ],
+    "fingerprint": {
+      "tag": "button",
+      "type": "submit",
+      "text": "Search",
+      "aria-label": "Search"
+    },
+    "healCount": 0
+  },
+  "linkedin.job_cards_list": {
+    "key": "linkedin.job_cards_list",
+    "primaryLocatorType": "css",
+    "primaryLocatorValue": "ul.jobs-search__results-list",
+    "lastKnownWorkingLocator": "ul.jobs-search__results-list",
+    "fallbackLocators": [
+      "ul.jobs-search-results__list",
+      "section.two-pane-serp-page__results-list ul",
+      "//ul[contains(@class, 'jobs-search__results-list') or contains(@class, 'jobs-search-results')]"
+    ],
+    "fingerprint": {
+      "tag": "ul",
+      "class": "jobs-search__results-list"
+    },
+    "healCount": 0
+  },
+  "linkedin.job_card": {
+    "key": "linkedin.job_card",
+    "primaryLocatorType": "css",
+    "primaryLocatorValue": "li div.base-card",
+    "lastKnownWorkingLocator": "li div.base-card",
+    "fallbackLocators": [
+      "li div.base-search-card",
+      "li.jobs-search-results__list-item",
+      "//div[contains(@class, 'base-card') or contains(@class, 'job-search-card')]"
+    ],
+    "fingerprint": {
+      "tag": "div",
+      "class": "base-card base-search-card job-search-card"
+    },
+    "healCount": 0
+  },
+  "linkedin.job_title": {
+    "key": "linkedin.job_title",
+    "primaryLocatorType": "css",
+    "primaryLocatorValue": "h3.base-search-card__title",
+    "lastKnownWorkingLocator": "h3.base-search-card__title",
+    "fallbackLocators": [
+      "h3.job-search-card__title",
+      "a.base-card__full-link",
+      "//h3[contains(@class, 'title') or contains(@class, 'base-search-card__title')]"
+    ],
+    "fingerprint": {
+      "tag": "h3",
+      "class": "base-search-card__title"
+    },
+    "healCount": 0
+  },
+  "linkedin.job_company": {
+    "key": "linkedin.job_company",
+    "primaryLocatorType": "css",
+    "primaryLocatorValue": "h4.base-search-card__subtitle",
+    "lastKnownWorkingLocator": "h4.base-search-card__subtitle",
+    "fallbackLocators": [
+      "a.hidden-nested-link",
+      "h4.job-search-card__subtitle",
+      "//h4[contains(@class, 'subtitle') or contains(@class, 'base-search-card__subtitle')]"
+    ],
+    "fingerprint": {
+      "tag": "h4",
+      "class": "base-search-card__subtitle"
+    },
+    "healCount": 0
+  },
+  "linkedin.job_location": {
+    "key": "linkedin.job_location",
+    "primaryLocatorType": "css",
+    "primaryLocatorValue": "span.job-search-card__location",
+    "lastKnownWorkingLocator": "span.job-search-card__location",
+    "fallbackLocators": [
+      "span.base-search-card__metadata-item",
+      "//span[contains(@class, 'location') or contains(@class, 'job-search-card__location')]"
+    ],
+    "fingerprint": {
+      "tag": "span",
+      "class": "job-search-card__location"
+    },
+    "healCount": 0
+  },
+  "linkedin.job_posted_date": {
+    "key": "linkedin.job_posted_date",
+    "primaryLocatorType": "css",
+    "primaryLocatorValue": "time.job-search-card__listdate",
+    "lastKnownWorkingLocator": "time.job-search-card__listdate",
+    "fallbackLocators": [
+      "time.job-search-card__listdate--new",
+      "time",
+      "//time[contains(@class, 'listdate')]"
+    ],
+    "fingerprint": {
+      "tag": "time",
+      "class": "job-search-card__listdate"
+    },
+    "healCount": 0
+  },
+  "linkedin.dismiss_modal_button": {
+    "key": "linkedin.dismiss_modal_button",
+    "primaryLocatorType": "css",
+    "primaryLocatorValue": "button[data-tracking-control-name='public_jobs_contextual-sign-in-modal_modal_dismiss']",
+    "lastKnownWorkingLocator": "button[data-tracking-control-name='public_jobs_contextual-sign-in-modal_modal_dismiss']",
+    "fallbackLocators": [
+      "button.modal__dismiss-btn",
+      "button[aria-label='Dismiss']",
+      "//button[contains(@aria-label, 'Dismiss') or contains(@class, 'modal__dismiss') or @data-modal='dismiss']",
+      "icon[data-test-id='close-icon']"
+    ],
+    "fingerprint": {
+      "tag": "button",
+      "aria-label": "Dismiss"
+    },
+    "healCount": 0
+  }
+}

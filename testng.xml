@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Self-Healing LinkedIn Automation Suite" verbose="1">
+    <test name="LinkedIn Job Search with Self-Healing">
+        <classes>
+            <class name="com.automation.healing.tests.LinkedInJobSearchTest" />
+        </classes>
+    </test>
+</suite>
